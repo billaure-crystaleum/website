@@ -25,6 +25,20 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .revealAnnounce {
+            display:none;
+        }
+        .trimUp{
+            margin-bottom:-5%!important;
+        }
+        .mUp5{
+            margin-top:15%;
+        }
+        .trimDown{
+            margin-bottom:10%!important;
+        }
+    </style>
 </head>
 
 <body class="template-color-1 nft-body-connect">
@@ -103,7 +117,7 @@
     <!-- ENd Header Area -->
 
     <!-- start banner area -->
-    <div class="banner-area banner-12 bg_image--23 bg_image with-down-shadow">
+    <div class="banner-area banner-12 bg_image--23 bg_image with-down-shadow mUp5" style="visibility:visible !important;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -111,11 +125,26 @@
                         <div class="banner-content-wrapper">
                             <img src="assets/images/logo/sticker.webp" style="width:20%;" />
                             <p class="pre-title">Electronero Network</p>
-                            <h4 class="title">Public Property | Open Source 
-                                </br>Community Operated since 2018
-                                </br>Public Alt-Eth and Privacy Centric Cryptonote
-                                </br>Join the Community!
-                            </h4>
+                            <h5 class="title"> Public Property | Open Source Projects
+                                <p class="revealAnnounce" id="rAnn">
+                                </br><h5>We are Interchained;</h5>
+                                Researchers, Development, Advisory, Promotions, Support
+
+                                </br><h5>Interest Groups;</h5>
+                                Public && Privacy-Centri c Ledgers
+                                </br>Ethereum && Cryptonote Monero based sidechains, chain forks
+                                
+                                </br><h5>We excel at delivering;</h5>
+                                Blockchain Engineering, Infrastructure, 
+                                </br>Smart Contracts, and Software Programming
+                                </br>Community Building && Operations since 2018
+
+                                </br><h5>We are dedicated providers;</h5>
+                                Testnet && Mainnet Implementation(s)
+                                </br>Our Operations are here to help 
+                                </br>Contact Us today with your Projects requirements!
+                                </p>
+                            </h5>
                             <p class="post-title">
                                 <div class="wallet-image-wrapper">
                                     <a href="#" class="avatar" data-tooltip="Electronero">
@@ -143,9 +172,12 @@
                                     <a href="https://Vindax.com">Vindax.com</a>
                                     <a href="https://Indoex.io">Indoex.io</a>
                                     </p>
-                                    <a class="btn btn-primary btn-large" href="https://github.com/electronero">Source Code</a></br></br>
                                     <a class="btn btn-primary btn-large" href="https://v2.electronero.org">App</a>
+                                    <a class="btn btn-primary btn-large" href="https://forms.gle/jh138849sMen5M2QA">Collaborate</a>
                                     <a class="btn btn-primary btn-large" href="https://t.me/electronero_network">Community</a>
+                                    </br>
+                                    </br>
+                                    <a class="btn btn-primary btn-large" href="https://github.com/electronero">Source</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +189,7 @@
 
 
     <!-- start category area -->
-    <div class="category-area pt--70">
+    <div class="category-area pt--70 trimUp" id="art" style="visibility:hidden !important;">
         <div class="container">
             <div class="row g-5">
                 <!-- start single category -->
@@ -283,6 +315,16 @@
     <script src="assets/js/vendor/web3.min.js"></script>
     <script src="assets/js/vendor/maralis.js"></script>
     <script src="assets/js/vendor/nft.js"></script>
+    <script>
+        function showIntel(){
+         var x = document.getElementById("rAnn");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
