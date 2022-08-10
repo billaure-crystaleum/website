@@ -201,7 +201,7 @@
 
 
     <!-- start category area -->
-    <div class="category-area pt--70 trimUp" id="art" style="visibility:hidden !important;">
+    <div class="category-area pt--70 trimUp" id="art" style="visibility:visible !important;">
         <div class="container">
             <div class="row g-5">
                 <!-- start single category -->
@@ -251,6 +251,8 @@
                         <span class="category-label">Trending</span>
                     </a>
                 </div>
+                
+                <!--                  -->
                 <!-- end single category -->
             </div>
             </div>
@@ -267,7 +269,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="copyright-left">
-                        <span>©2022 Electronero Network <a href="https://twitter.com/_electronero">@electronero_network on Telegram</a></span>
+                        <span>©2022 Electronero Network <a href="https://t.me/electronero_network">@electronero_network on Telegram</a></span>
                         <ul class="privacy">
                             <li><a href="https://v1.electronero.org/">V1 </a></li>
                             <li><a href="https://v2.electronero.org/">V2 </a></li>
@@ -277,11 +279,8 @@
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="copyright-right">
                         <ul class="social-copyright">
-                            <li><a href="#"><i data-feather="facebook"></i></a></li>
-                            <li><a href="#"><i data-feather="twitter"></i></a></li>
-                            <li><a href="#"><i data-feather="instagram"></i></a></li>
-                            <li><a href="#"><i data-feather="linkedin"></i></a></li>
-                            <li><a href="#"><i data-feather="mail"></i></a></li>
+                            <li><a href="https://twitter.com/_electronero"><i data-feather="twitter"></i></a></li>
+                            <li><a href="mailto:support@electronero.org"><i data-feather="mail"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -334,8 +333,16 @@
          $("#rAnn").show();
         });
         }
+        function showArt(){
+         $("#revealArt").click(function(){
+         $("#revealListings").hide();
+         $("#art").show();
+        });
+        }art
         function showListings(){
          $("#intel").click(function(){
+         $("#revealListings").hide();
+         $("#art").hide();
          $("#rAnn").hide();
          $("#revealListings").show();
         });
